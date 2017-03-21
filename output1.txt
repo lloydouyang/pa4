@@ -1,0 +1,4 @@
+Below are the 4 worst HVAC systems(not in a sorted order):
+['1', '17', '18', '15']
+Below are the their corresponding daily differences between actual and desired temperatures
+[6.865196078431373, 6.8508557457212715, 6.777464788732394, 6.8005115089514065]

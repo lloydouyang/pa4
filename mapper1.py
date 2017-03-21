@@ -15,6 +15,6 @@ for line in sys.stdin:
         # Reduce step, i.e. the input for reducer.py
         #
         # tab-delimited; the trivial word count is 1
-        if (word!=",,,,,,"):
+        if (word!=",,,,,,") & (word.find("System")==-1):
             mylist = word.split(",")
             print '%s\t%s' % (mylist[4]+','+word, 1)

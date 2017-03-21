@@ -15,6 +15,9 @@ for line in sys.stdin:
         # Reduce step, i.e. the input for reducer.py
         #
         # tab-delimited; the trivial word count is 1
-        if (word!=",,,,,,"):
+        if (word!=",,,,,,") & (word.find("System")==-1):
             mylist = word.split(",")
-            print '%s\t%s' % (mylist[4]+','+word, 1)
+            s=mylist[1] 
+            if (len(s)==7): s='0'+s
+            if ((s>='09:00:00') & (s<='17:00:00')):
+                print '%s\t%s' % (mylist[6]+','+s+','+word, 1)
